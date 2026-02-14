@@ -141,3 +141,23 @@ function arrayFlatterner(arr) {
 }
 
 // arrayFlatterner(myArr);
+
+//Question - prototype of map function
+
+function myMap(fn) {
+  const newArr = [];
+  for (let i = 0; i < this.length; i++) {
+    if (fn(this[i])) {
+      newArr.push(fn(this[i]));
+    } else {
+      newArr.push(undefined);
+    }
+  }
+  return newArr;
+}
+
+Array.prototype.myMap = myMap;
+
+// let newArr = [1, 2, 3].myMap((e) => e * 2);
+
+// console.log(newArr);
