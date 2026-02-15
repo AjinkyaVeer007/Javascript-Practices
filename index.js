@@ -2,4 +2,5 @@
 // import "./arraysMethods.js";
 // import "./callApplyBind.js";
 // import "./this.js";
-import "./stringManipulation.js";
+// import "./stringManipulation.js";
+import "./promises.js";

@@ -42,3 +42,20 @@ function reverseLettersNotSequence(str = "") {
 }
 
 // reverseLettersNotSequence("I am indian");
+
+// Question - check is string palindrome
+
+function palindromeChecker(str = "") {
+  let modifiedStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    modifiedStr += str[i];
+  }
+
+  if (str === modifiedStr) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+// palindromeChecker("NaN");
